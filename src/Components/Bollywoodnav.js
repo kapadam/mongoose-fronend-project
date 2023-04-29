@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Bollywood from './Bollywood'
+import Bollywood from './Bollywood';
 const Bollywoodnav = () => {
   return (
     <div>
