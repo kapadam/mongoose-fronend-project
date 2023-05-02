@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Fitness = () => {
   const [Fitness,setFitness]=useState('');
     useEffect(()=>{
-        fetch("http://localhost:8000/fitness")
+        fetch("https://blog-project-mongoose.onrender.com/fitness")
         .then(res=>res.json())
         .then(data=>{console.log(data)
         setFitness(data)

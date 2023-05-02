@@ -4,7 +4,7 @@ import './Technology.css'
 const Technology = () => {
   const [Technology,setTechnology]=useState('');
     useEffect(()=>{
-        fetch("http://localhost:8000/technology")
+        fetch("https://blog-project-mongoose.onrender.com/technology")
         .then(res=>res.json())
         .then((data)=>{console.log(data)
         setTechnology(data);

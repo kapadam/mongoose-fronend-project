@@ -4,7 +4,7 @@ import './Hollywood.css'
 const Hollywood = () => {
     const [Data,setData]=useState('');
     useEffect(()=>{
-        fetch("http://localhost:8000/hollywood")
+        fetch("https://blog-project-mongoose.onrender.com/hollywood")
         .then(res=>res.json())
         .then(data=>{console.log(data)
          setData(data);   

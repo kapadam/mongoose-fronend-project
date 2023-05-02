@@ -4,7 +4,7 @@ import './Bollywood.css'
 const Bollywood = () => {
     const [Bollywood,setBollywood]=useState('');
     useEffect(()=>{
-        fetch("http://localhost:8000/bollywood")
+        fetch("https://blog-project-mongoose.onrender.com/bollywood")
         .then(res=>res.json())
         .then((data)=>{console.log(data)
         setBollywood(data);

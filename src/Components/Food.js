@@ -4,7 +4,7 @@ import './Food.css'
 const Food = () => {
   const [Food,setFood]=useState('');
     useEffect(()=>{
-        fetch("http://localhost:8000/food")
+        fetch("https://blog-project-mongoose.onrender.com/food")
         .then(res=>res.json())
         .then((data)=>{console.log(data)
         setFood(data);
